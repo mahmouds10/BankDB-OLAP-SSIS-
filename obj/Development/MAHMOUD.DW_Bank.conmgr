@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="MAHMOUD.DW_Bank"
+  DTS:DTSID="{8E045B6F-7938-4020-ACCC-F30604893F58}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=MAHMOUD;Initial Catalog=DW_Bank;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-DWH_Project-{8E045B6F-7938-4020-ACCC-F30604893F58}MAHMOUD.DW_Bank;Auto Translate=False;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
