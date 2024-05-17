@@ -54,20 +54,3 @@ alter table BankDB.dbo.Treasury_Products add Last_Update datetime
 UPDATE BankDB.dbo.Treasury_Products SET Last_Update = '1951-12-12';
 alter table STG_Bank.dbo.STG_Treasury_Products add src_update_date datetime
 alter table DW_Bank.dbo.DIM_Treasury_Products add src_update_date datetime
-
-
-UPDATE Config_Table
-SET last_extract_date = (
-    SELECT ISNULL(MAX(src_update_date),last_extract_date)
-    FROM STG_Bank.dbo.STG_Payment
-)
-WHERE table_name = 'Payment';
-
-use STG_Bank
-select * from DIM_Payment
-
-
-
-SELECT *
- FROM Treasury_Products
- 

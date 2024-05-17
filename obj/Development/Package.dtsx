@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="187"
-  DTS:VersionGUID="{19CB0E2A-F962-4FB8-9494-96C6C3450B6F}">
+  DTS:VersionBuild="189"
+  DTS:VersionGUID="{89CD2A66-B60A-4635-847B-D2E8BFDC6EE4}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables>
@@ -16515,42 +16515,42 @@ where [refTable].[product_id] = ?</property>
         <NodeLayout
           Size="215.2,41.6"
           Id="Package\From_SRC_to_STG\From_SRC_To_STG 2\TRG_STG_Payment_OLEDB"
-          TopLeft="579.757567118515,433.884842825315" />
+          TopLeft="436.1212056225,389.339388943639" />
         <NodeLayout
           Size="183.2,41.6"
           Id="Package\From_SRC_to_STG\From_SRC_To_STG 2\SRC_Product_OLEDB"
-          TopLeft="924.666652888059,140.66666457057" />
+          TopLeft="781.030291392044,96.1212106888947" />
         <NodeLayout
           Size="188,41.6"
           Id="Package\From_SRC_to_STG\From_SRC_To_STG 2\SRC_Payment_OLEDB"
-          TopLeft="576.151505903914,110.848483196714" />
+          TopLeft="432.515144407899,66.3030293150382" />
         <NodeLayout
           Size="210.4,41.6"
           Id="Package\From_SRC_to_STG\From_SRC_To_STG 2\TRG_STG_Product_OLEDB"
-          TopLeft="907.666653141379,303.666662141681" />
+          TopLeft="764.030291645364,259.121208260005" />
         <NodeLayout
           Size="170.4,41.6"
           Id="Package\From_SRC_to_STG\From_SRC_To_STG 2\SRC_Loan_OLEDB"
-          TopLeft="290.06666637361,123.66666482389" />
+          TopLeft="146.430304877595,79.1212109422141" />
         <NodeLayout
           Size="184,41.6"
           Id="Package\From_SRC_to_STG\From_SRC_To_STG 2\Account_Lockup_Loan"
-          TopLeft="282.733332288596,287.999997085995" />
+          TopLeft="139.096970792581,243.454543204319" />
         <NodeLayout
           Size="197.6,41.6"
           Id="Package\From_SRC_to_STG\From_SRC_To_STG 2\TRG_STG_Loan_OLEDB"
-          TopLeft="276.399999778137,445.533329284124" />
+          TopLeft="132.763638282122,400.987875402448" />
         <NodeLayout
           Size="179.2,41.6"
           Id="Package\From_SRC_to_STG\From_SRC_To_STG 2\Branch_Lockup_Loan"
-          TopLeft="287.733332015408,197.999997703897" />
+          TopLeft="144.096970519393,153.454543822221" />
         <NodeLayout
           Size="156,41.6"
           Id="Package\From_SRC_to_STG\From_SRC_To_STG 2\Data Conversion"
-          TopLeft="297.566665963828,366.799996490346" />
+          TopLeft="153.930304467813,322.25454260867" />
         <EdgeLayout
           Id="Package\From_SRC_to_STG\From_SRC_To_STG 2.Paths[Lookup Match Output]"
-          TopLeft="376.033332152002,239.599997703897">
+          TopLeft="232.396970655987,195.054543822221">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -16574,7 +16574,7 @@ where [refTable].[product_id] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\From_SRC_to_STG\From_SRC_To_STG 2.Paths[OLE DB Source Output]"
-          TopLeft="376.299999194509,165.26666482389">
+          TopLeft="232.663637698494,120.721210942214">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -16596,7 +16596,7 @@ where [refTable].[product_id] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\From_SRC_to_STG\From_SRC_To_STG 2.Paths[Lookup Match Output1]"
-          TopLeft="375.149999126212,329.599997085995">
+          TopLeft="231.513637630197,285.054543204319">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -16620,7 +16620,7 @@ where [refTable].[product_id] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\From_SRC_to_STG\From_SRC_To_STG 2.Paths[Data Conversion Output]"
-          TopLeft="375.383332870983,408.399996490346">
+          TopLeft="231.746971374968,363.85454260867">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -16643,10 +16643,10 @@ where [refTable].[product_id] = ?</property>
         <NodeLayout
           Size="202.4,41.6"
           Id="Package\From_SRC_to_STG\From_SRC_To_STG 2\Account_Lockup_Products"
-          TopLeft="912.99998639524,222.999996677041" />
+          TopLeft="769.363624899225,178.454542795365" />
         <EdgeLayout
           Id="Package\From_SRC_to_STG\From_SRC_To_STG 2.Paths[OLE DB Source Output1]"
-          TopLeft="1015.23331964165,182.26666457057">
+          TopLeft="871.596958145634,137.721210688894">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -16668,7 +16668,7 @@ where [refTable].[product_id] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\From_SRC_to_STG\From_SRC_To_STG 2.Paths[Lookup Match Output2]"
-          TopLeft="1013.53331976831,264.599996677041">
+          TopLeft="869.896958272295,220.054542795365">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -16693,10 +16693,10 @@ where [refTable].[product_id] = ?</property>
         <NodeLayout
           Size="198.4,41.6"
           Id="Package\From_SRC_to_STG\From_SRC_To_STG 2\Account_lockup_Payment"
-          TopLeft="575.818173237823,195.181815273382" />
+          TopLeft="432.181811741808,150.636361391707" />
         <EdgeLayout
           Id="Package\From_SRC_to_STG\From_SRC_To_STG 2.Paths[OLE DB Source Output2]"
-          TopLeft="672.584839570868,152.448483196714">
+          TopLeft="528.948478074853,107.903029315038">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -16719,14 +16719,14 @@ where [refTable].[product_id] = ?</property>
         <NodeLayout
           Size="197.6,41.6"
           Id="Package\From_SRC_to_STG\From_SRC_To_STG 2\Branch_Lockup_Payment"
-          TopLeft="581.181809521534,280.909086723219" />
+          TopLeft="437.545448025519,236.363632841543" />
         <NodeLayout
           Size="164,41.6"
           Id="Package\From_SRC_to_STG\From_SRC_To_STG 2\Data Conversion 1"
-          TopLeft="602.18180920861,354.454540172761" />
+          TopLeft="458.545447712595,309.909086291085" />
         <EdgeLayout
           Id="Package\From_SRC_to_STG\From_SRC_To_STG 2.Paths[Lookup Match Output3]"
-          TopLeft="677.499991379678,236.781815273383">
+          TopLeft="533.863629883663,192.236361391707">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -16750,7 +16750,7 @@ where [refTable].[product_id] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\From_SRC_to_STG\From_SRC_To_STG 2.Paths[Lookup Match Output4]"
-          TopLeft="682.081809365072,322.509086723219">
+          TopLeft="538.445447869057,277.963632841543">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -16774,7 +16774,7 @@ where [refTable].[product_id] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\From_SRC_to_STG\From_SRC_To_STG 2.Paths[Data Conversion Output1]"
-          TopLeft="685.769688163563,396.054540172761">
+          TopLeft="542.133326667548,351.509086291085">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
