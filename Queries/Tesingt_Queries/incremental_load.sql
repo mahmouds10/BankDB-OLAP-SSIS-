@@ -11,7 +11,7 @@ insert into Config_Table values ('Branch' , '1950-01-01')
 insert into Config_Table values ('Payment' , '1950-01-01')
 insert into Config_Table values ('Products' , '1950-01-01')
 
-select * from Config_Table
+select * from BankDB.dbo.Config_Table
 Delete from Config_Table
 
 update BankDB.dbo.Config_Table set last_extract_date = '1950-01-01'

@@ -1,7 +1,6 @@
 --Selecting SRC
 use BankDB
 select * from Account
-select * from Customers
 select * from Loan
 select * from Branch
 select * from Payment

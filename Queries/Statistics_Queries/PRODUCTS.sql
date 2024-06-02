@@ -5,8 +5,8 @@ SELECT TOP (1000) [account_id] as Account_ID
   FROM [DW_Bank].[dbo].[FACT_Treasury_PRODUCT]
 
 
--- Total fees per Product_ID
-SELECT [product_id] as Product_ID, SUM([Total_Fees]) AS Total_Fees
+-- Total fees per Product Name
+SELECT Product_Name, SUM([Total_Fees]) AS Total_Fees
 FROM [DW_Bank].[dbo].[FACT_Treasury_PRODUCT]
-GROUP BY [product_id]
+GROUP BY Product_Name
 ORDER BY Total_Fees DESC;

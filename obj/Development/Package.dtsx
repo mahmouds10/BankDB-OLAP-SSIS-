@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="189"
-  DTS:VersionGUID="{89CD2A66-B60A-4635-847B-D2E8BFDC6EE4}">
+  DTS:VersionBuild="193"
+  DTS:VersionGUID="{4177895C-5905-4AD6-A930-D008C56D1C09}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables>
@@ -1189,6 +1189,37 @@ where [refTable].[loan_id] = ? and [refTable].[date_id2] = ?</property>
                           lineageId="Package\DIM_to_FACT_Loan\DIM_to_FACT_Loan_Task\SRC_DIM_Loan_OLEDB.Outputs[OLE DB Source Output].Columns[src_update_date]"
                           name="src_update_date"
                           truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\DIM_to_FACT_Loan\DIM_to_FACT_Loan_Task\SRC_DIM_Loan_OLEDB.Outputs[OLE DB Source Output].Columns[Account_Balance]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\DIM_to_FACT_Loan\DIM_to_FACT_Loan_Task\SRC_DIM_Loan_OLEDB.Outputs[OLE DB Source Output].ExternalColumns[Account_Balance]"
+                          lineageId="Package\DIM_to_FACT_Loan\DIM_to_FACT_Loan_Task\SRC_DIM_Loan_OLEDB.Outputs[OLE DB Source Output].Columns[Account_Balance]"
+                          name="Account_Balance"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\DIM_to_FACT_Loan\DIM_to_FACT_Loan_Task\SRC_DIM_Loan_OLEDB.Outputs[OLE DB Source Output].Columns[Account_Type]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\DIM_to_FACT_Loan\DIM_to_FACT_Loan_Task\SRC_DIM_Loan_OLEDB.Outputs[OLE DB Source Output].ExternalColumns[Account_Type]"
+                          length="100"
+                          lineageId="Package\DIM_to_FACT_Loan\DIM_to_FACT_Loan_Task\SRC_DIM_Loan_OLEDB.Outputs[OLE DB Source Output].Columns[Account_Type]"
+                          name="Account_Type"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\DIM_to_FACT_Loan\DIM_to_FACT_Loan_Task\SRC_DIM_Loan_OLEDB.Outputs[OLE DB Source Output].Columns[Branch_Name]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\DIM_to_FACT_Loan\DIM_to_FACT_Loan_Task\SRC_DIM_Loan_OLEDB.Outputs[OLE DB Source Output].ExternalColumns[Branch_Name]"
+                          length="50"
+                          lineageId="Package\DIM_to_FACT_Loan\DIM_to_FACT_Loan_Task\SRC_DIM_Loan_OLEDB.Outputs[OLE DB Source Output].Columns[Branch_Name]"
+                          name="Branch_Name"
+                          truncationRowDisposition="FailComponent" />
                       </outputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -1230,6 +1261,22 @@ where [refTable].[loan_id] = ? and [refTable].[date_id2] = ?</property>
                           refId="Package\DIM_to_FACT_Loan\DIM_to_FACT_Loan_Task\SRC_DIM_Loan_OLEDB.Outputs[OLE DB Source Output].ExternalColumns[src_update_date]"
                           dataType="dbTimeStamp"
                           name="src_update_date" />
+                        <externalMetadataColumn
+                          refId="Package\DIM_to_FACT_Loan\DIM_to_FACT_Loan_Task\SRC_DIM_Loan_OLEDB.Outputs[OLE DB Source Output].ExternalColumns[Account_Balance]"
+                          dataType="r8"
+                          name="Account_Balance" />
+                        <externalMetadataColumn
+                          refId="Package\DIM_to_FACT_Loan\DIM_to_FACT_Loan_Task\SRC_DIM_Loan_OLEDB.Outputs[OLE DB Source Output].ExternalColumns[Account_Type]"
+                          codePage="1252"
+                          dataType="str"
+                          length="100"
+                          name="Account_Type" />
+                        <externalMetadataColumn
+                          refId="Package\DIM_to_FACT_Loan\DIM_to_FACT_Loan_Task\SRC_DIM_Loan_OLEDB.Outputs[OLE DB Source Output].ExternalColumns[Branch_Name]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Branch_Name" />
                       </externalMetadataColumns>
                     </output>
                     <output
@@ -1284,6 +1331,25 @@ where [refTable].[loan_id] = ? and [refTable].[date_id2] = ?</property>
                           dataType="dbTimeStamp"
                           lineageId="Package\DIM_to_FACT_Loan\DIM_to_FACT_Loan_Task\SRC_DIM_Loan_OLEDB.Outputs[OLE DB Source Error Output].Columns[src_update_date]"
                           name="src_update_date" />
+                        <outputColumn
+                          refId="Package\DIM_to_FACT_Loan\DIM_to_FACT_Loan_Task\SRC_DIM_Loan_OLEDB.Outputs[OLE DB Source Error Output].Columns[Account_Balance]"
+                          dataType="r8"
+                          lineageId="Package\DIM_to_FACT_Loan\DIM_to_FACT_Loan_Task\SRC_DIM_Loan_OLEDB.Outputs[OLE DB Source Error Output].Columns[Account_Balance]"
+                          name="Account_Balance" />
+                        <outputColumn
+                          refId="Package\DIM_to_FACT_Loan\DIM_to_FACT_Loan_Task\SRC_DIM_Loan_OLEDB.Outputs[OLE DB Source Error Output].Columns[Account_Type]"
+                          codePage="1252"
+                          dataType="str"
+                          length="100"
+                          lineageId="Package\DIM_to_FACT_Loan\DIM_to_FACT_Loan_Task\SRC_DIM_Loan_OLEDB.Outputs[OLE DB Source Error Output].Columns[Account_Type]"
+                          name="Account_Type" />
+                        <outputColumn
+                          refId="Package\DIM_to_FACT_Loan\DIM_to_FACT_Loan_Task\SRC_DIM_Loan_OLEDB.Outputs[OLE DB Source Error Output].Columns[Branch_Name]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          lineageId="Package\DIM_to_FACT_Loan\DIM_to_FACT_Loan_Task\SRC_DIM_Loan_OLEDB.Outputs[OLE DB Source Error Output].Columns[Branch_Name]"
+                          name="Branch_Name" />
                         <outputColumn
                           refId="Package\DIM_to_FACT_Loan\DIM_to_FACT_Loan_Task\SRC_DIM_Loan_OLEDB.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                           dataType="i4"
@@ -3158,6 +3224,37 @@ where [refTable].[payment_id] = ?</property>
                           lineageId="Package\DIM_to_Payment_Fact\DIM_to_Payment_fact_Task\SRC_DIM_Payment_OLEDB.Outputs[OLE DB Source Output].Columns[src_update_date]"
                           name="src_update_date"
                           truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\DIM_to_Payment_Fact\DIM_to_Payment_fact_Task\SRC_DIM_Payment_OLEDB.Outputs[OLE DB Source Output].Columns[Account_Balance]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\DIM_to_Payment_Fact\DIM_to_Payment_fact_Task\SRC_DIM_Payment_OLEDB.Outputs[OLE DB Source Output].ExternalColumns[Account_Balance]"
+                          lineageId="Package\DIM_to_Payment_Fact\DIM_to_Payment_fact_Task\SRC_DIM_Payment_OLEDB.Outputs[OLE DB Source Output].Columns[Account_Balance]"
+                          name="Account_Balance"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\DIM_to_Payment_Fact\DIM_to_Payment_fact_Task\SRC_DIM_Payment_OLEDB.Outputs[OLE DB Source Output].Columns[Account_Type]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\DIM_to_Payment_Fact\DIM_to_Payment_fact_Task\SRC_DIM_Payment_OLEDB.Outputs[OLE DB Source Output].ExternalColumns[Account_Type]"
+                          length="100"
+                          lineageId="Package\DIM_to_Payment_Fact\DIM_to_Payment_fact_Task\SRC_DIM_Payment_OLEDB.Outputs[OLE DB Source Output].Columns[Account_Type]"
+                          name="Account_Type"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\DIM_to_Payment_Fact\DIM_to_Payment_fact_Task\SRC_DIM_Payment_OLEDB.Outputs[OLE DB Source Output].Columns[Branch_Name]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\DIM_to_Payment_Fact\DIM_to_Payment_fact_Task\SRC_DIM_Payment_OLEDB.Outputs[OLE DB Source Output].ExternalColumns[Branch_Name]"
+                          length="50"
+                          lineageId="Package\DIM_to_Payment_Fact\DIM_to_Payment_fact_Task\SRC_DIM_Payment_OLEDB.Outputs[OLE DB Source Output].Columns[Branch_Name]"
+                          name="Branch_Name"
+                          truncationRowDisposition="FailComponent" />
                       </outputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -3191,6 +3288,22 @@ where [refTable].[payment_id] = ?</property>
                           refId="Package\DIM_to_Payment_Fact\DIM_to_Payment_fact_Task\SRC_DIM_Payment_OLEDB.Outputs[OLE DB Source Output].ExternalColumns[src_update_date]"
                           dataType="dbTimeStamp"
                           name="src_update_date" />
+                        <externalMetadataColumn
+                          refId="Package\DIM_to_Payment_Fact\DIM_to_Payment_fact_Task\SRC_DIM_Payment_OLEDB.Outputs[OLE DB Source Output].ExternalColumns[Account_Balance]"
+                          dataType="r8"
+                          name="Account_Balance" />
+                        <externalMetadataColumn
+                          refId="Package\DIM_to_Payment_Fact\DIM_to_Payment_fact_Task\SRC_DIM_Payment_OLEDB.Outputs[OLE DB Source Output].ExternalColumns[Account_Type]"
+                          codePage="1252"
+                          dataType="str"
+                          length="100"
+                          name="Account_Type" />
+                        <externalMetadataColumn
+                          refId="Package\DIM_to_Payment_Fact\DIM_to_Payment_fact_Task\SRC_DIM_Payment_OLEDB.Outputs[OLE DB Source Output].ExternalColumns[Branch_Name]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Branch_Name" />
                       </externalMetadataColumns>
                     </output>
                     <output
@@ -3235,6 +3348,25 @@ where [refTable].[payment_id] = ?</property>
                           dataType="dbTimeStamp"
                           lineageId="Package\DIM_to_Payment_Fact\DIM_to_Payment_fact_Task\SRC_DIM_Payment_OLEDB.Outputs[OLE DB Source Error Output].Columns[src_update_date]"
                           name="src_update_date" />
+                        <outputColumn
+                          refId="Package\DIM_to_Payment_Fact\DIM_to_Payment_fact_Task\SRC_DIM_Payment_OLEDB.Outputs[OLE DB Source Error Output].Columns[Account_Balance]"
+                          dataType="r8"
+                          lineageId="Package\DIM_to_Payment_Fact\DIM_to_Payment_fact_Task\SRC_DIM_Payment_OLEDB.Outputs[OLE DB Source Error Output].Columns[Account_Balance]"
+                          name="Account_Balance" />
+                        <outputColumn
+                          refId="Package\DIM_to_Payment_Fact\DIM_to_Payment_fact_Task\SRC_DIM_Payment_OLEDB.Outputs[OLE DB Source Error Output].Columns[Account_Type]"
+                          codePage="1252"
+                          dataType="str"
+                          length="100"
+                          lineageId="Package\DIM_to_Payment_Fact\DIM_to_Payment_fact_Task\SRC_DIM_Payment_OLEDB.Outputs[OLE DB Source Error Output].Columns[Account_Type]"
+                          name="Account_Type" />
+                        <outputColumn
+                          refId="Package\DIM_to_Payment_Fact\DIM_to_Payment_fact_Task\SRC_DIM_Payment_OLEDB.Outputs[OLE DB Source Error Output].Columns[Branch_Name]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          lineageId="Package\DIM_to_Payment_Fact\DIM_to_Payment_fact_Task\SRC_DIM_Payment_OLEDB.Outputs[OLE DB Source Error Output].Columns[Branch_Name]"
+                          name="Branch_Name" />
                         <outputColumn
                           refId="Package\DIM_to_Payment_Fact\DIM_to_Payment_fact_Task\SRC_DIM_Payment_OLEDB.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                           dataType="i4"
@@ -4728,6 +4860,14 @@ where [refTable].[product_id] = ?</property>
                           cachedName="fees"
                           externalMetadataColumnId="Package\DIM_to_Products_Fact\DIM_to_Products_Fact_Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Total_Fees]"
                           lineageId="Package\DIM_to_Products_Fact\DIM_to_Products_Fact_Task\Union All 1.Outputs[Union All Output 1].Columns[fees]" />
+                        <inputColumn
+                          refId="Package\DIM_to_Products_Fact\DIM_to_Products_Fact_Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Product_Name]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="100"
+                          cachedName="Product_Name"
+                          externalMetadataColumnId="Package\DIM_to_Products_Fact\DIM_to_Products_Fact_Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Product_Name]"
+                          lineageId="Package\DIM_to_Products_Fact\DIM_to_Products_Fact_Task\Union All 1.Outputs[Union All Output 1].Columns[Product_Name]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -4747,6 +4887,12 @@ where [refTable].[product_id] = ?</property>
                           refId="Package\DIM_to_Products_Fact\DIM_to_Products_Fact_Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Total_Fees]"
                           dataType="r8"
                           name="Total_Fees" />
+                        <externalMetadataColumn
+                          refId="Package\DIM_to_Products_Fact\DIM_to_Products_Fact_Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Product_Name]"
+                          codePage="1252"
+                          dataType="str"
+                          length="100"
+                          name="Product_Name" />
                       </externalMetadataColumns>
                     </input>
                   </inputs>
@@ -8480,7 +8626,7 @@ where [refTable].[branch_id] = ?</property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
-                      name="SqlCommandVariable"></property>
+                      name="SqlCommandVariable">User::Loan_SQL_Select_Statement</property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -8493,7 +8639,7 @@ where [refTable].[branch_id] = ?</property>
                       dataType="System.Int32"
                       description="Specifies the mode used to access the database."
                       name="AccessMode"
-                      typeConverter="AccessMode">0</property>
+                      typeConverter="AccessMode">3</property>
                     <property
                       dataType="System.String"
                       description="The mappings between the parameters in the SQL command and variables."
@@ -14813,14 +14959,14 @@ where [refTable].[product_id] = ?</property>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,73.5296295355456"
+              EndConnector="0,73.529629535547"
               Start="0,0"
-              End="0,66.0296295355456">
+              End="0,66.029629535547">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,66.0296295355456" />
+                    End="0,66.029629535547" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -14857,14 +15003,14 @@ where [refTable].[product_id] = ?</property>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,68.6907406803048"
+              EndConnector="0,68.6907406803049"
               Start="0,0"
-              End="0,61.1907406803048">
+              End="0,61.1907406803049">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,61.1907406803048" />
+                    End="0,61.1907406803049" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -15042,6 +15188,10 @@ where [refTable].[product_id] = ?</property>
           Id="Package\DIM_to_FACT_Loan\DIM_to_FACT_Loan_Task\Union All 1"
           TopLeft="740.666655629874,650.916657036792" />
         <NodeLayout
+          Size="120,41.6"
+          Id="Package\DIM_to_FACT_Loan\DIM_to_FACT_Loan_Task\Union All"
+          TopLeft="740.666655629874,346.516663086663" />
+        <NodeLayout
           Size="195.2,41.6"
           Id="Package\DIM_to_FACT_Loan\DIM_to_FACT_Loan_Task\SRC_DIM_Loan_OLEDB"
           TopLeft="705.666656151414,60.9166658284763" />
@@ -15069,10 +15219,72 @@ where [refTable].[product_id] = ?</property>
           Size="152.8,41.6"
           Id="Package\DIM_to_FACT_Loan\DIM_to_FACT_Loan_Task\Derived Column"
           TopLeft="603.666657671333,255.91666292275" />
-        <NodeLayout
-          Size="120,41.6"
-          Id="Package\DIM_to_FACT_Loan\DIM_to_FACT_Loan_Task\Union All"
-          TopLeft="740.666655629874,346.516663086663" />
+        <EdgeLayout
+          Id="Package\DIM_to_FACT_Loan\DIM_to_FACT_Loan_Task.Paths[Union All Output 11]"
+          TopLeft="799.366655726732,388.116663086663">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,45.79999718368"
+              Start="0,0"
+              End="0,38.29999718368">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,38.29999718368" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DIM_to_FACT_Loan\DIM_to_FACT_Loan_Task.Paths[Union All Output 1]"
+          TopLeft="805.766655652226,692.516657036792">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,38.2000002533186"
+              Start="0,0"
+              End="0,30.7000002533186">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,30.7000002533186" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DIM_to_FACT_Loan\DIM_to_FACT_Loan_Task.Paths[OLE DB Source Output]"
+          TopLeft="800.866656002403,102.516665828476">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,42.3999987483027"
+              Start="0,0"
+              End="0,34.8999987483027">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34.8999987483027" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\DIM_to_FACT_Loan\DIM_to_FACT_Loan_Task.Paths[Lookup No Match Output2]"
           TopLeft="806.466655674577,772.316657290111">
@@ -15297,72 +15509,6 @@ where [refTable].[product_id] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <EdgeLayout
-          Id="Package\DIM_to_FACT_Loan\DIM_to_FACT_Loan_Task.Paths[Union All Output 11]"
-          TopLeft="799.366655726732,388.116663086663">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,45.79999718368"
-              Start="0,0"
-              End="0,38.29999718368">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,38.29999718368" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\DIM_to_FACT_Loan\DIM_to_FACT_Loan_Task.Paths[Union All Output 1]"
-          TopLeft="805.766655652226,692.516657036792">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,38.2000002533186"
-              Start="0,0"
-              End="0,30.7000002533186">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,30.7000002533186" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\DIM_to_FACT_Loan\DIM_to_FACT_Loan_Task.Paths[OLE DB Source Output]"
-          TopLeft="800.866656002403,102.516665828476">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,42.3999987483027"
-              Start="0,0"
-              End="0,34.8999987483027">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,34.8999987483027" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
@@ -15471,17 +15617,21 @@ where [refTable].[product_id] = ?</property>
           Id="Package\DIM_to_Payment_Fact\DIM_to_Payment_fact_Task\SRC_DIM_Payment_OLEDB"
           TopLeft="678.54544443434,82.2727261443029" />
         <NodeLayout
+          Size="128.8,41.6"
+          Id="Package\DIM_to_Payment_Fact\DIM_to_Payment_fact_Task\Union All 1"
+          TopLeft="727.545443704183,629.272717993368" />
+        <NodeLayout
           Size="171.2,41.6"
           Id="Package\DIM_to_Payment_Fact\DIM_to_Payment_fact_Task\OLE DB Destination"
           TopLeft="719.545443823392,785.672717844356" />
         <NodeLayout
+          Size="120,41.6"
+          Id="Package\DIM_to_Payment_Fact\DIM_to_Payment_fact_Task\Union All"
+          TopLeft="730.54544365948,344.272722240199" />
+        <NodeLayout
           Size="152.8,41.6"
           Id="Package\DIM_to_Payment_Fact\DIM_to_Payment_fact_Task\Derived Column"
           TopLeft="588.090900327672,267.818177924915" />
-        <NodeLayout
-          Size="128.8,41.6"
-          Id="Package\DIM_to_Payment_Fact\DIM_to_Payment_fact_Task\Union All 1"
-          TopLeft="727.545443704183,629.272717993368" />
         <NodeLayout
           Size="161.6,41.6"
           Id="Package\DIM_to_Payment_Fact\DIM_to_Payment_fact_Task\Derived Column 1"
@@ -15498,82 +15648,6 @@ where [refTable].[product_id] = ?</property>
           Size="140,41.6"
           Id="Package\DIM_to_Payment_Fact\DIM_to_Payment_fact_Task\Date_Lockup"
           TopLeft="717.545443853195,426.272721018304" />
-        <NodeLayout
-          Size="120,41.6"
-          Id="Package\DIM_to_Payment_Fact\DIM_to_Payment_fact_Task\Union All"
-          TopLeft="730.54544365948,344.272722240199" />
-        <EdgeLayout
-          Id="Package\DIM_to_Payment_Fact\DIM_to_Payment_fact_Task.Paths[Union All Output 11]"
-          TopLeft="795.445443860645,670.872717993368">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,34.9999998956916"
-              Start="0,0"
-              End="0,27.4999998956916">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,27.4999998956916" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\DIM_to_Payment_Fact\DIM_to_Payment_fact_Task.Paths[Union All Output 1]"
-          TopLeft="789.045443756337,385.872722240199">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,40.399998778105"
-              Start="0,0"
-              End="0,32.899998778105">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,32.899998778105" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\DIM_to_Payment_Fact\DIM_to_Payment_fact_Task.Paths[OLE DB Source Output]"
-          TopLeft="783.345444225724,123.872726144303">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,49.3999986439944"
-              Start="0,0"
-              End="0,41.8999986439944">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,41.8999986439944" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package\DIM_to_Payment_Fact\DIM_to_Payment_fact_Task.Paths[Lookup No Match Output2]"
           TopLeft="802.04544392025,747.47271788906">
@@ -15790,6 +15864,78 @@ where [refTable].[product_id] = ?</property>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DIM_to_Payment_Fact\DIM_to_Payment_fact_Task.Paths[Union All Output 11]"
+          TopLeft="795.445443860645,670.872717993368">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,34.9999998956916"
+              Start="0,0"
+              End="0,27.4999998956916">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,27.4999998956916" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DIM_to_Payment_Fact\DIM_to_Payment_fact_Task.Paths[Union All Output 1]"
+          TopLeft="789.045443756337,385.872722240199">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,40.399998778105"
+              Start="0,0"
+              End="0,32.899998778105">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,32.899998778105" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DIM_to_Payment_Fact\DIM_to_Payment_fact_Task.Paths[OLE DB Source Output]"
+          TopLeft="783.345444225724,123.872726144303">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,49.3999986439944"
+              Start="0,0"
+              End="0,41.8999986439944">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,41.8999986439944" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
@@ -15898,9 +16044,9 @@ where [refTable].[product_id] = ?</property>
           Id="Package\DIM_to_Products_Fact\DIM_to_Products_Fact_Task\Lookup 1"
           TopLeft="445.833326689899,634.3333247751" />
         <NodeLayout
-          Size="128.8,41.6"
-          Id="Package\DIM_to_Products_Fact\DIM_to_Products_Fact_Task\Union All 1"
-          TopLeft="439.833326779306,553.333325088024" />
+          Size="120,41.6"
+          Id="Package\DIM_to_Products_Fact\DIM_to_Products_Fact_Task\Union All"
+          TopLeft="435.833326838911,283.333329111338" />
         <NodeLayout
           Size="140,41.6"
           Id="Package\DIM_to_Products_Fact\DIM_to_Products_Fact_Task\Date_Lockup"
@@ -15918,10 +16064,6 @@ where [refTable].[product_id] = ?</property>
           Id="Package\DIM_to_Products_Fact\DIM_to_Products_Fact_Task\Derived Column"
           TopLeft="258.833329476416,200.333330348134" />
         <NodeLayout
-          Size="120,41.6"
-          Id="Package\DIM_to_Products_Fact\DIM_to_Products_Fact_Task\Union All"
-          TopLeft="435.833326838911,283.333329111338" />
-        <NodeLayout
           Size="161.6,41.6"
           Id="Package\DIM_to_Products_Fact\DIM_to_Products_Fact_Task\Derived Column 1"
           TopLeft="263.999996066093,452.466660293936" />
@@ -15929,30 +16071,10 @@ where [refTable].[product_id] = ?</property>
           Size="208,41.6"
           Id="Package\DIM_to_Products_Fact\DIM_to_Products_Fact_Task\SRC_DIM_Product_OLEDB"
           TopLeft="386.833327569068,26.333332940936" />
-        <EdgeLayout
-          Id="Package\DIM_to_Products_Fact\DIM_to_Products_Fact_Task.Paths[Lookup Match Output]"
-          TopLeft="521.099993550281,404.933327919245">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,148.399997168779"
-              Start="0,0"
-              End="0,140.899997168779">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,140.899997168779" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,64.6453110843895,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+        <NodeLayout
+          Size="128.8,41.6"
+          Id="Package\DIM_to_Products_Fact\DIM_to_Products_Fact_Task\Union All 1"
+          TopLeft="439.833326779306,553.333325088024" />
         <EdgeLayout
           Id="Package\DIM_to_Products_Fact\DIM_to_Products_Fact_Task.Paths[Derived Column Output1]"
           TopLeft="335.233329476416,241.933330348134">
@@ -16207,6 +16329,30 @@ where [refTable].[product_id] = ?</property>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DIM_to_Products_Fact\DIM_to_Products_Fact_Task.Paths[Lookup Match Output]"
+          TopLeft="521.099993550281,404.933327919245">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,148.399997168779"
+              Start="0,0"
+              End="0,140.899997168779">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,140.899997168779" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,64.6453110843895,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
@@ -16311,14 +16457,6 @@ where [refTable].[product_id] = ?</property>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="212,41.6"
-          Id="Package\From_SRC_to_STG\From_SRC_to_STG 1\TRG_STG_Account_OLEDB"
-          TopLeft="657.305544000394,390.055554836337" />
-        <NodeLayout
-          Size="207.2,41.6"
-          Id="Package\From_SRC_to_STG\From_SRC_to_STG 1\TRG_STG_Bransh_OLEDB"
-          TopLeft="230.63887223422,267.122220293161" />
-        <NodeLayout
           Size="180,41.6"
           Id="Package\From_SRC_to_STG\From_SRC_to_STG 1\SRC_Branch_OLEDB"
           TopLeft="242.166649382148,165.866665441725" />
@@ -16326,32 +16464,26 @@ where [refTable].[product_id] = ?</property>
           Size="184.8,41.6"
           Id="Package\From_SRC_to_STG\From_SRC_to_STG 1\SRC_Account_OLEDB"
           TopLeft="680.388876509613,99.866669515106" />
-        <EdgeLayout
-          Id="Package\From_SRC_to_STG\From_SRC_to_STG 1.Paths[OLE DB Source Output]"
-          TopLeft="333.202760808184,207.466665441726">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,59.6555548514369"
-              Start="0,0"
-              End="0,52.1555548514369">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.1555548514369" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <NodeLayout
           Size="162.4,41.6"
           Id="Package\From_SRC_to_STG\From_SRC_to_STG 1\Customer_Lockup"
           TopLeft="686.999989762902,170.999997451901" />
+        <NodeLayout
+          Size="156,41.6"
+          Id="Package\From_SRC_to_STG\From_SRC_to_STG 1\Data Conversion"
+          TopLeft="687.999989748001,314.999995306134" />
+        <NodeLayout
+          Size="212,41.6"
+          Id="Package\From_SRC_to_STG\From_SRC_to_STG 1\TRG_STG_Account_OLEDB"
+          TopLeft="657.305544000394,390.055554836337" />
+        <NodeLayout
+          Size="150.4,41.6"
+          Id="Package\From_SRC_to_STG\From_SRC_to_STG 1\Branch_Lockup"
+          TopLeft="688.9999897331,244.999996349215" />
+        <NodeLayout
+          Size="207.2,41.6"
+          Id="Package\From_SRC_to_STG\From_SRC_to_STG 1\TRG_STG_Bransh_OLEDB"
+          TopLeft="230.63887223422,267.122220293161" />
         <EdgeLayout
           Id="Package\From_SRC_to_STG\From_SRC_to_STG 1.Paths[OLE DB Source Output1]"
           TopLeft="770.494433136258,141.466669515106">
@@ -16374,38 +16506,28 @@ where [refTable].[product_id] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="150.4,41.6"
-          Id="Package\From_SRC_to_STG\From_SRC_to_STG 1\Branch_Lockup"
-          TopLeft="688.9999897331,244.999996349215" />
         <EdgeLayout
-          Id="Package\From_SRC_to_STG\From_SRC_to_STG 1.Paths[Lookup Match Output]"
-          TopLeft="766.199989748001,212.599997451901">
+          Id="Package\From_SRC_to_STG\From_SRC_to_STG 1.Paths[OLE DB Source Output]"
+          TopLeft="333.202760808184,207.466665441726">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,32.3999988973139"
+              EndConnector="0,59.6555548514369"
               Start="0,0"
-              End="0,24.8999988973139">
+              End="0,52.1555548514369">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,24.8999988973139" />
+                    End="0,52.1555548514369" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,6.64531194865697,96.3827734375,11.609375"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="156,41.6"
-          Id="Package\From_SRC_to_STG\From_SRC_to_STG 1\Data Conversion"
-          TopLeft="687.999989748001,314.999995306134" />
         <EdgeLayout
           Id="Package\From_SRC_to_STG\From_SRC_to_STG 1.Paths[Lookup Match Output1]"
           TopLeft="765.099989740551,286.599996349215">
@@ -16426,7 +16548,31 @@ where [refTable].[product_id] = ?</property>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,4.64531197845938,96.3827734375,11.609375"
+              BoundingBox="-48.19138671875,4.6453119784594,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\From_SRC_to_STG\From_SRC_to_STG 1.Paths[Lookup Match Output]"
+          TopLeft="766.199989748001,212.599997451901">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,32.3999988973139"
+              Start="0,0"
+              End="0,24.8999988973139">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,24.8999988973139" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,6.64531194865695,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -16456,32 +16602,6 @@ where [refTable].[product_id] = ?</property>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\From_SRC_to_STG\From_SRC_to_STG 1\TRG_STG_Account_OLEDB">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\From_SRC_to_STG\From_SRC_to_STG 1\TRG_STG_Bransh_OLEDB">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\From_SRC_to_STG\From_SRC_to_STG 1\SRC_Branch_OLEDB">
     <Properties>
       <Property>
@@ -16507,47 +16627,135 @@ where [refTable].[product_id] = ?</property>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\From_SRC_to_STG\From_SRC_to_STG 1\Customer_Lockup">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[Customers]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\From_SRC_to_STG\From_SRC_to_STG 1\TRG_STG_Account_OLEDB">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\From_SRC_to_STG\From_SRC_to_STG 1\Branch_Lockup">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[Branch]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\From_SRC_to_STG\From_SRC_to_STG 1\TRG_STG_Bransh_OLEDB">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\From_SRC_to_STG\From_SRC_To_STG 2">
     <LayoutInfo>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="215.2,41.6"
-          Id="Package\From_SRC_to_STG\From_SRC_To_STG 2\TRG_STG_Payment_OLEDB"
-          TopLeft="436.1212056225,389.339388943639" />
+          Size="197.6,41.6"
+          Id="Package\From_SRC_to_STG\From_SRC_To_STG 2\Branch_Lockup_Payment"
+          TopLeft="437.545448025519,236.363632841543" />
         <NodeLayout
-          Size="183.2,41.6"
-          Id="Package\From_SRC_to_STG\From_SRC_To_STG 2\SRC_Product_OLEDB"
-          TopLeft="781.030291392044,96.1212106888947" />
+          Size="164,41.6"
+          Id="Package\From_SRC_to_STG\From_SRC_To_STG 2\Data Conversion 1"
+          TopLeft="458.545447712595,309.909086291085" />
         <NodeLayout
-          Size="188,41.6"
-          Id="Package\From_SRC_to_STG\From_SRC_To_STG 2\SRC_Payment_OLEDB"
-          TopLeft="432.515144407899,66.3030293150382" />
+          Size="198.4,41.6"
+          Id="Package\From_SRC_to_STG\From_SRC_To_STG 2\Account_lockup_Payment"
+          TopLeft="432.181811741808,150.636361391707" />
         <NodeLayout
           Size="210.4,41.6"
           Id="Package\From_SRC_to_STG\From_SRC_To_STG 2\TRG_STG_Product_OLEDB"
           TopLeft="764.030291645364,259.121208260005" />
         <NodeLayout
-          Size="170.4,41.6"
-          Id="Package\From_SRC_to_STG\From_SRC_To_STG 2\SRC_Loan_OLEDB"
-          TopLeft="146.430304877595,79.1212109422141" />
-        <NodeLayout
-          Size="184,41.6"
-          Id="Package\From_SRC_to_STG\From_SRC_To_STG 2\Account_Lockup_Loan"
-          TopLeft="139.096970792581,243.454543204319" />
+          Size="215.2,41.6"
+          Id="Package\From_SRC_to_STG\From_SRC_To_STG 2\TRG_STG_Payment_OLEDB"
+          TopLeft="436.1212056225,389.339388943639" />
         <NodeLayout
           Size="197.6,41.6"
           Id="Package\From_SRC_to_STG\From_SRC_To_STG 2\TRG_STG_Loan_OLEDB"
           TopLeft="132.763638282122,400.987875402448" />
         <NodeLayout
+          Size="156,41.6"
+          Id="Package\From_SRC_to_STG\From_SRC_To_STG 2\Data Conversion"
+          TopLeft="153.930304467813,322.25454260867" />
+        <NodeLayout
+          Size="202.4,41.6"
+          Id="Package\From_SRC_to_STG\From_SRC_To_STG 2\Account_Lockup_Products"
+          TopLeft="769.363624899225,178.454542795365" />
+        <NodeLayout
+          Size="188,41.6"
+          Id="Package\From_SRC_to_STG\From_SRC_To_STG 2\SRC_Payment_OLEDB"
+          TopLeft="432.515144407899,66.3030293150382" />
+        <NodeLayout
+          Size="183.2,41.6"
+          Id="Package\From_SRC_to_STG\From_SRC_To_STG 2\SRC_Product_OLEDB"
+          TopLeft="781.030291392044,96.1212106888947" />
+        <NodeLayout
+          Size="170.4,41.6"
+          Id="Package\From_SRC_to_STG\From_SRC_To_STG 2\SRC_Loan_OLEDB"
+          TopLeft="146.430304877595,79.1212109422141" />
+        <NodeLayout
           Size="179.2,41.6"
           Id="Package\From_SRC_to_STG\From_SRC_To_STG 2\Branch_Lockup_Loan"
           TopLeft="144.096970519393,153.454543822221" />
         <NodeLayout
-          Size="156,41.6"
-          Id="Package\From_SRC_to_STG\From_SRC_To_STG 2\Data Conversion"
-          TopLeft="153.930304467813,322.25454260867" />
+          Size="184,41.6"
+          Id="Package\From_SRC_to_STG\From_SRC_To_STG 2\Account_Lockup_Loan"
+          TopLeft="139.096970792581,243.454543204319" />
         <EdgeLayout
           Id="Package\From_SRC_to_STG\From_SRC_To_STG 2.Paths[Lookup Match Output]"
           TopLeft="232.396970655987,195.054543822221">
@@ -16568,8 +16776,96 @@ where [refTable].[product_id] = ?</property>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,14.6453121910493,96.3827734375,11.609375"
+              BoundingBox="-48.19138671875,14.6453121910492,96.3827734375,11.609375"
               RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\From_SRC_to_STG\From_SRC_To_STG 2.Paths[Data Conversion Output1]"
+          TopLeft="542.133326667548,351.509086291085">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,37.8303026525539"
+              Start="0,0"
+              End="0,30.3303026525539">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,30.3303026525539" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\From_SRC_to_STG\From_SRC_To_STG 2.Paths[Data Conversion Output]"
+          TopLeft="231.746971374968,363.85454260867">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,37.1333327937781"
+              Start="0,0"
+              End="0,29.6333327937781">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,29.6333327937781" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\From_SRC_to_STG\From_SRC_To_STG 2.Paths[OLE DB Source Output2]"
+          TopLeft="528.948478074853,107.903029315038">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,42.7333320766688"
+              Start="0,0"
+              End="0,35.2333320766688">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,35.2333320766688" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\From_SRC_to_STG\From_SRC_To_STG 2.Paths[OLE DB Source Output1]"
+          TopLeft="871.596958145634,137.721210688894">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,40.7333321064708"
+              Start="0,0"
+              End="0,33.2333321064708">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33.2333321064708" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -16595,75 +16891,51 @@ where [refTable].[product_id] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\From_SRC_to_STG\From_SRC_To_STG 2.Paths[Lookup Match Output1]"
-          TopLeft="231.513637630197,285.054543204319">
+          Id="Package\From_SRC_to_STG\From_SRC_To_STG 2.Paths[Lookup Match Output4]"
+          TopLeft="538.445447869057,277.963632841543">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,37.1999994043509"
+              EndConnector="0,31.9454534495421"
               Start="0,0"
-              End="0,29.6999994043509">
+              End="0,24.4454534495421">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,29.6999994043509" />
+                    End="0,24.4454534495421" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,9.04531220217547,96.3827734375,11.609375"
+              BoundingBox="-48.19138671875,6.41803922477105,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\From_SRC_to_STG\From_SRC_To_STG 2.Paths[Data Conversion Output]"
-          TopLeft="231.746971374968,363.85454260867">
+          Id="Package\From_SRC_to_STG\From_SRC_To_STG 2.Paths[Lookup Match Output3]"
+          TopLeft="533.863629883663,192.236361391707">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,37.1333327937781"
+              EndConnector="0,44.1272714498365"
               Start="0,0"
-              End="0,29.6333327937781">
+              End="0,36.6272714498365">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,29.6333327937781" />
+                    End="0,36.6272714498365" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="202.4,41.6"
-          Id="Package\From_SRC_to_STG\From_SRC_To_STG 2\Account_Lockup_Products"
-          TopLeft="769.363624899225,178.454542795365" />
-        <EdgeLayout
-          Id="Package\From_SRC_to_STG\From_SRC_To_STG 2.Paths[OLE DB Source Output1]"
-          TopLeft="871.596958145634,137.721210688894">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,40.7333321064708"
-              Start="0,0"
-              End="0,33.2333321064708">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,33.2333321064708" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,12.5089482249182,96.3827734375,11.609375"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -16690,137 +16962,74 @@ where [refTable].[product_id] = ?</property>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="198.4,41.6"
-          Id="Package\From_SRC_to_STG\From_SRC_To_STG 2\Account_lockup_Payment"
-          TopLeft="432.181811741808,150.636361391707" />
         <EdgeLayout
-          Id="Package\From_SRC_to_STG\From_SRC_To_STG 2.Paths[OLE DB Source Output2]"
-          TopLeft="528.948478074853,107.903029315038">
+          Id="Package\From_SRC_to_STG\From_SRC_To_STG 2.Paths[Lookup Match Output1]"
+          TopLeft="231.513637630197,285.054543204319">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,42.7333320766688"
+              EndConnector="0,37.1999994043509"
               Start="0,0"
-              End="0,35.2333320766688">
+              End="0,29.6999994043509">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,35.2333320766688" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="197.6,41.6"
-          Id="Package\From_SRC_to_STG\From_SRC_To_STG 2\Branch_Lockup_Payment"
-          TopLeft="437.545448025519,236.363632841543" />
-        <NodeLayout
-          Size="164,41.6"
-          Id="Package\From_SRC_to_STG\From_SRC_To_STG 2\Data Conversion 1"
-          TopLeft="458.545447712595,309.909086291085" />
-        <EdgeLayout
-          Id="Package\From_SRC_to_STG\From_SRC_To_STG 2.Paths[Lookup Match Output3]"
-          TopLeft="533.863629883663,192.236361391707">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,44.1272714498365"
-              Start="0,0"
-              End="0,36.6272714498365">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,36.6272714498365" />
+                    End="0,29.6999994043509" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,12.5089482249183,96.3827734375,11.609375"
+              BoundingBox="-48.19138671875,9.04531220217545,96.3827734375,11.609375"
               RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\From_SRC_to_STG\From_SRC_To_STG 2.Paths[Lookup Match Output4]"
-          TopLeft="538.445447869057,277.963632841543">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,31.9454534495421"
-              Start="0,0"
-              End="0,24.4454534495421">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,24.4454534495421" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,6.41803922477104,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\From_SRC_to_STG\From_SRC_To_STG 2.Paths[Data Conversion Output1]"
-          TopLeft="542.133326667548,351.509086291085">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,37.8303026525539"
-              Start="0,0"
-              End="0,30.3303026525539">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,30.3303026525539" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\From_SRC_to_STG\From_SRC_To_STG 2\TRG_STG_Payment_OLEDB">
+    design-time-name="Package\From_SRC_to_STG\From_SRC_To_STG 2\Branch_Lockup_Payment">
     <Properties>
       <Property>
-        <Name>DataSourceViewID</Name>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[Branch]</Value>
       </Property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q2:string">Table</Value>
+          type="q4:string">0</Value>
       </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\From_SRC_to_STG\From_SRC_To_STG 2\SRC_Product_OLEDB">
-    <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\From_SRC_to_STG\From_SRC_To_STG 2\SRC_Payment_OLEDB">
+    design-time-name="Package\From_SRC_to_STG\From_SRC_To_STG 2\Account_lockup_Payment">
     <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[Account]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
       <Property>
         <Name>DataSourceViewID</Name>
       </Property>
@@ -16839,6 +17048,66 @@ where [refTable].[product_id] = ?</property>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\From_SRC_to_STG\From_SRC_To_STG 2\TRG_STG_Payment_OLEDB">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\From_SRC_to_STG\From_SRC_To_STG 2\Account_Lockup_Products">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[Account]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\From_SRC_to_STG\From_SRC_To_STG 2\SRC_Payment_OLEDB">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\From_SRC_to_STG\From_SRC_To_STG 2\SRC_Product_OLEDB">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\From_SRC_to_STG\From_SRC_To_STG 2\SRC_Loan_OLEDB">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\From_STG_to_DIM\From_STG_to_DIM 1">
     <LayoutInfo>
@@ -16849,25 +17118,25 @@ where [refTable].[product_id] = ?</property>
           Id="Package\From_STG_to_DIM\From_STG_to_DIM 1\Lookup 2"
           TopLeft="821.499987758702,244.499996356666" />
         <NodeLayout
-          Size="204.8,41.6"
-          Id="Package\From_STG_to_DIM\From_STG_to_DIM 1\TRG_DIM_Bransh_OLEDB"
-          TopLeft="383.305546791879,332.955551646793" />
-        <NodeLayout
           Size="209.6,41.6"
           Id="Package\From_STG_to_DIM\From_STG_to_DIM 1\TRG_DIM_Account_OLEDB"
           TopLeft="776.305540935722,323.555553300821" />
-        <NodeLayout
-          Size="207.2,41.6"
-          Id="Package\From_STG_to_DIM\From_STG_to_DIM 1\SRC_STG_Branch_OLEDB"
-          TopLeft="385.666657376621,159.566664543781" />
         <NodeLayout
           Size="206.4,41.6"
           Id="Package\From_STG_to_DIM\From_STG_to_DIM 1\SRC_STG_Acount_OLEDB"
           TopLeft="777.666651535362,166.555555640304" />
         <NodeLayout
+          Size="204.8,41.6"
+          Id="Package\From_STG_to_DIM\From_STG_to_DIM 1\TRG_DIM_Bransh_OLEDB"
+          TopLeft="383.305546791879,332.955551646793" />
+        <NodeLayout
           Size="112.8,41.6"
           Id="Package\From_STG_to_DIM\From_STG_to_DIM 1\Lookup"
           TopLeft="436.499993495643,237.499996460975" />
+        <NodeLayout
+          Size="207.2,41.6"
+          Id="Package\From_STG_to_DIM\From_STG_to_DIM 1\SRC_STG_Branch_OLEDB"
+          TopLeft="385.666657376621,159.566664543781" />
         <EdgeLayout
           Id="Package\From_STG_to_DIM\From_STG_to_DIM 1.Paths[OLE DB Source Output1]"
           TopLeft="491.083325436132,201.166664543781">
@@ -16932,7 +17201,7 @@ where [refTable].[product_id] = ?</property>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-55.80638671875,9.17309097207774,111.6127734375,11.609375"
+              BoundingBox="-55.80638671875,9.17309097207775,111.6127734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -16987,19 +17256,6 @@ where [refTable].[product_id] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\From_STG_to_DIM\From_STG_to_DIM 1\TRG_DIM_Bransh_OLEDB">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\From_STG_to_DIM\From_STG_to_DIM 1\TRG_DIM_Account_OLEDB">
     <Properties>
       <Property>
@@ -17013,7 +17269,7 @@ where [refTable].[product_id] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\From_STG_to_DIM\From_STG_to_DIM 1\SRC_STG_Branch_OLEDB">
+    design-time-name="Package\From_STG_to_DIM\From_STG_to_DIM 1\SRC_STG_Acount_OLEDB">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -17026,7 +17282,7 @@ where [refTable].[product_id] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\From_STG_to_DIM\From_STG_to_DIM 1\SRC_STG_Acount_OLEDB">
+    design-time-name="Package\From_STG_to_DIM\From_STG_to_DIM 1\TRG_DIM_Bransh_OLEDB">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -17061,95 +17317,60 @@ where [refTable].[product_id] = ?</property>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\From_STG_to_DIM\From_STG_to_DIM 1\SRC_STG_Branch_OLEDB">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\From_STG_to_DIM\From_STG_to_DIM 2">
     <LayoutInfo>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="215.2,41.6"
-          Id="Package\From_STG_to_DIM\From_STG_to_DIM 2\SRC_STG_Products_OLEDB"
-          TopLeft="295.1923032936,154.02563873048" />
-        <NodeLayout
-          Size="215.2,41.6"
-          Id="Package\From_STG_to_DIM\From_STG_to_DIM 2\SRC_STG_Payment_OLEDB"
-          TopLeft="877.692294613673,154.858972051396" />
-        <NodeLayout
-          Size="195.2,41.6"
-          Id="Package\From_STG_to_DIM\From_STG_to_DIM 2\TRG_DIM_Loan_OLEDB"
-          TopLeft="585.692299858882,323.692303613975" />
-        <NodeLayout
-          Size="195.2,41.6"
-          Id="Package\From_STG_to_DIM\From_STG_to_DIM 2\Check_IN_DIM_Products"
-          TopLeft="303.525636502757,233.192304217472" />
-        <NodeLayout
           Size="212.8,41.6"
           Id="Package\From_STG_to_DIM\From_STG_to_DIM 2\TRG_DIM_Products_OLEDB"
           TopLeft="296.025636614516,321.358969182922" />
         <NodeLayout
           Size="195.2,41.6"
-          Id="Package\From_STG_to_DIM\From_STG_to_DIM 2\Check_IN_Dim_Payment"
-          TopLeft="887.692294464661,238.192304142966" />
+          Id="Package\From_STG_to_DIM\From_STG_to_DIM 2\TRG_DIM_Loan_OLEDB"
+          TopLeft="585.692299858882,323.692303613975" />
+        <NodeLayout
+          Size="212.8,41.6"
+          Id="Package\From_STG_to_DIM\From_STG_to_DIM 2\TRG_DIM_Payment_OLEDB"
+          TopLeft="886.025627822831,320.69230291362" />
+        <NodeLayout
+          Size="195.2,41.6"
+          Id="Package\From_STG_to_DIM\From_STG_to_DIM 2\Check_IN_DIM_Products"
+          TopLeft="303.525636502757,233.192304217472" />
+        <NodeLayout
+          Size="215.2,41.6"
+          Id="Package\From_STG_to_DIM\From_STG_to_DIM 2\SRC_STG_Payment_OLEDB"
+          TopLeft="877.692294613673,154.858972051396" />
         <NodeLayout
           Size="197.6,41.6"
           Id="Package\From_STG_to_DIM\From_STG_to_DIM 2\SRC_STG_Loan_OLEDB"
           TopLeft="580.692299933388,154.692306281282" />
         <NodeLayout
+          Size="195.2,41.6"
+          Id="Package\From_STG_to_DIM\From_STG_to_DIM 2\Check_IN_Dim_Payment"
+          TopLeft="887.692294464661,238.192304142966" />
+        <NodeLayout
           Size="177.6,41.6"
           Id="Package\From_STG_to_DIM\From_STG_to_DIM 2\Check_IN_DIM_Loan"
           TopLeft="590.692299784376,234.69230508919" />
         <NodeLayout
-          Size="212.8,41.6"
-          Id="Package\From_STG_to_DIM\From_STG_to_DIM 2\TRG_DIM_Payment_OLEDB"
-          TopLeft="886.025627822831,320.69230291362" />
-        <EdgeLayout
-          Id="Package\From_STG_to_DIM\From_STG_to_DIM 2.Paths[Lookup No Match Output1]"
-          TopLeft="988.858961143746,279.792304142966">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,40.899998770654"
-              Start="0,0"
-              End="0,33.399998770654">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,33.399998770654" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-55.80638671875,10.895311885327,111.6127734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\From_STG_to_DIM\From_STG_to_DIM 2.Paths[Lookup No Match Output]"
-          TopLeft="681.392299821628,276.29230508919">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,47.3999985247849"
-              Start="0,0"
-              End="0,39.8999985247849">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,39.8999985247849" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-55.80638671875,14.1453117623925,111.6127734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          Size="215.2,41.6"
+          Id="Package\From_STG_to_DIM\From_STG_to_DIM 2\SRC_STG_Products_OLEDB"
+          TopLeft="295.1923032936,154.02563873048" />
         <EdgeLayout
           Id="Package\From_STG_to_DIM\From_STG_to_DIM 2.Paths[OLE DB Source Output2]"
           TopLeft="401.958969898178,195.62563873048">
@@ -17236,7 +17457,55 @@ where [refTable].[product_id] = ?</property>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-55.80638671875,13.7286449827253,111.6127734375,11.609375"
+              BoundingBox="-55.80638671875,13.7286449827252,111.6127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\From_STG_to_DIM\From_STG_to_DIM 2.Paths[Lookup No Match Output1]"
+          TopLeft="988.858961143746,279.792304142966">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,40.899998770654"
+              Start="0,0"
+              End="0,33.399998770654">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33.399998770654" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-55.80638671875,10.895311885327,111.6127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\From_STG_to_DIM\From_STG_to_DIM 2.Paths[Lookup No Match Output]"
+          TopLeft="681.392299821628,276.29230508919">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,47.3999985247849"
+              Start="0,0"
+              End="0,39.8999985247849">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,39.8999985247849" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-55.80638671875,14.1453117623924,111.6127734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -17244,20 +17513,7 @@ where [refTable].[product_id] = ?</property>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\From_STG_to_DIM\From_STG_to_DIM 2\SRC_STG_Products_OLEDB">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\From_STG_to_DIM\From_STG_to_DIM 2\SRC_STG_Payment_OLEDB">
+    design-time-name="Package\From_STG_to_DIM\From_STG_to_DIM 2\TRG_DIM_Products_OLEDB">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -17271,6 +17527,19 @@ where [refTable].[product_id] = ?</property>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\From_STG_to_DIM\From_STG_to_DIM 2\TRG_DIM_Loan_OLEDB">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\From_STG_to_DIM\From_STG_to_DIM 2\TRG_DIM_Payment_OLEDB">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -17306,7 +17575,20 @@ where [refTable].[product_id] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\From_STG_to_DIM\From_STG_to_DIM 2\TRG_DIM_Products_OLEDB">
+    design-time-name="Package\From_STG_to_DIM\From_STG_to_DIM 2\SRC_STG_Payment_OLEDB">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\From_STG_to_DIM\From_STG_to_DIM 2\SRC_STG_Loan_OLEDB">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -17342,19 +17624,6 @@ where [refTable].[product_id] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\From_STG_to_DIM\From_STG_to_DIM 2\SRC_STG_Loan_OLEDB">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\From_STG_to_DIM\From_STG_to_DIM 2\Check_IN_DIM_Loan">
     <Properties>
       <Property>
@@ -17378,7 +17647,7 @@ where [refTable].[product_id] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\From_STG_to_DIM\From_STG_to_DIM 2\TRG_DIM_Payment_OLEDB">
+    design-time-name="Package\From_STG_to_DIM\From_STG_to_DIM 2\SRC_STG_Products_OLEDB">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -17387,121 +17656,6 @@ where [refTable].[product_id] = ?</property>
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\From_SRC_to_STG\From_SRC_to_STG 1\Customer_Lockup">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:boolean">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[Customers]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:int">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\From_SRC_to_STG\From_SRC_to_STG 1\Branch_Lockup">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:boolean">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[Branch]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:int">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\From_SRC_to_STG\From_SRC_To_STG 2\Account_Lockup_Products">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:boolean">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[Account]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:int">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\From_SRC_to_STG\From_SRC_To_STG 2\Account_lockup_Payment">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:boolean">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[Account]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:int">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\From_SRC_to_STG\From_SRC_To_STG 2\Branch_Lockup_Payment">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:boolean">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[Branch]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:int">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
