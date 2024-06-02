@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="193"
-  DTS:VersionGUID="{4177895C-5905-4AD6-A930-D008C56D1C09}">
+  DTS:VersionBuild="194"
+  DTS:VersionGUID="{813DBFFE-2A62-4566-B5DE-5DD0DCED66A8}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables>
@@ -5098,6 +5098,26 @@ where [refTable].[product_id] = ?</property>
                           lineageId="Package\DIM_to_Products_Fact\DIM_to_Products_Fact_Task\SRC_DIM_Product_OLEDB.Outputs[OLE DB Source Output].Columns[src_update_date]"
                           name="src_update_date"
                           truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\DIM_to_Products_Fact\DIM_to_Products_Fact_Task\SRC_DIM_Product_OLEDB.Outputs[OLE DB Source Output].Columns[Account_Balance]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\DIM_to_Products_Fact\DIM_to_Products_Fact_Task\SRC_DIM_Product_OLEDB.Outputs[OLE DB Source Output].ExternalColumns[Account_Balance]"
+                          lineageId="Package\DIM_to_Products_Fact\DIM_to_Products_Fact_Task\SRC_DIM_Product_OLEDB.Outputs[OLE DB Source Output].Columns[Account_Balance]"
+                          name="Account_Balance"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\DIM_to_Products_Fact\DIM_to_Products_Fact_Task\SRC_DIM_Product_OLEDB.Outputs[OLE DB Source Output].Columns[Account_Type]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\DIM_to_Products_Fact\DIM_to_Products_Fact_Task\SRC_DIM_Product_OLEDB.Outputs[OLE DB Source Output].ExternalColumns[Account_Type]"
+                          length="100"
+                          lineageId="Package\DIM_to_Products_Fact\DIM_to_Products_Fact_Task\SRC_DIM_Product_OLEDB.Outputs[OLE DB Source Output].Columns[Account_Type]"
+                          name="Account_Type"
+                          truncationRowDisposition="FailComponent" />
                       </outputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -5157,6 +5177,16 @@ where [refTable].[product_id] = ?</property>
                           refId="Package\DIM_to_Products_Fact\DIM_to_Products_Fact_Task\SRC_DIM_Product_OLEDB.Outputs[OLE DB Source Output].ExternalColumns[src_update_date]"
                           dataType="dbTimeStamp"
                           name="src_update_date" />
+                        <externalMetadataColumn
+                          refId="Package\DIM_to_Products_Fact\DIM_to_Products_Fact_Task\SRC_DIM_Product_OLEDB.Outputs[OLE DB Source Output].ExternalColumns[Account_Balance]"
+                          dataType="r8"
+                          name="Account_Balance" />
+                        <externalMetadataColumn
+                          refId="Package\DIM_to_Products_Fact\DIM_to_Products_Fact_Task\SRC_DIM_Product_OLEDB.Outputs[OLE DB Source Output].ExternalColumns[Account_Type]"
+                          codePage="1252"
+                          dataType="str"
+                          length="100"
+                          name="Account_Type" />
                       </externalMetadataColumns>
                     </output>
                     <output
@@ -5232,6 +5262,18 @@ where [refTable].[product_id] = ?</property>
                           dataType="dbTimeStamp"
                           lineageId="Package\DIM_to_Products_Fact\DIM_to_Products_Fact_Task\SRC_DIM_Product_OLEDB.Outputs[OLE DB Source Error Output].Columns[src_update_date]"
                           name="src_update_date" />
+                        <outputColumn
+                          refId="Package\DIM_to_Products_Fact\DIM_to_Products_Fact_Task\SRC_DIM_Product_OLEDB.Outputs[OLE DB Source Error Output].Columns[Account_Balance]"
+                          dataType="r8"
+                          lineageId="Package\DIM_to_Products_Fact\DIM_to_Products_Fact_Task\SRC_DIM_Product_OLEDB.Outputs[OLE DB Source Error Output].Columns[Account_Balance]"
+                          name="Account_Balance" />
+                        <outputColumn
+                          refId="Package\DIM_to_Products_Fact\DIM_to_Products_Fact_Task\SRC_DIM_Product_OLEDB.Outputs[OLE DB Source Error Output].Columns[Account_Type]"
+                          codePage="1252"
+                          dataType="str"
+                          length="100"
+                          lineageId="Package\DIM_to_Products_Fact\DIM_to_Products_Fact_Task\SRC_DIM_Product_OLEDB.Outputs[OLE DB Source Error Output].Columns[Account_Type]"
+                          name="Account_Type" />
                         <outputColumn
                           refId="Package\DIM_to_Products_Fact\DIM_to_Products_Fact_Task\SRC_DIM_Product_OLEDB.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                           dataType="i4"
@@ -16044,10 +16086,6 @@ where [refTable].[product_id] = ?</property>
           Id="Package\DIM_to_Products_Fact\DIM_to_Products_Fact_Task\Lookup 1"
           TopLeft="445.833326689899,634.3333247751" />
         <NodeLayout
-          Size="120,41.6"
-          Id="Package\DIM_to_Products_Fact\DIM_to_Products_Fact_Task\Union All"
-          TopLeft="435.833326838911,283.333329111338" />
-        <NodeLayout
           Size="140,41.6"
           Id="Package\DIM_to_Products_Fact\DIM_to_Products_Fact_Task\Date_Lockup"
           TopLeft="425.833326987923,363.333327919245" />
@@ -16064,85 +16102,21 @@ where [refTable].[product_id] = ?</property>
           Id="Package\DIM_to_Products_Fact\DIM_to_Products_Fact_Task\Derived Column"
           TopLeft="258.833329476416,200.333330348134" />
         <NodeLayout
-          Size="161.6,41.6"
-          Id="Package\DIM_to_Products_Fact\DIM_to_Products_Fact_Task\Derived Column 1"
-          TopLeft="263.999996066093,452.466660293936" />
+          Size="128.8,41.6"
+          Id="Package\DIM_to_Products_Fact\DIM_to_Products_Fact_Task\Union All 1"
+          TopLeft="439.833326779306,553.333325088024" />
         <NodeLayout
           Size="208,41.6"
           Id="Package\DIM_to_Products_Fact\DIM_to_Products_Fact_Task\SRC_DIM_Product_OLEDB"
           TopLeft="386.833327569068,26.333332940936" />
         <NodeLayout
-          Size="128.8,41.6"
-          Id="Package\DIM_to_Products_Fact\DIM_to_Products_Fact_Task\Union All 1"
-          TopLeft="439.833326779306,553.333325088024" />
-        <EdgeLayout
-          Id="Package\DIM_to_Products_Fact\DIM_to_Products_Fact_Task.Paths[Derived Column Output1]"
-          TopLeft="335.233329476416,241.933330348134">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="141.933330695828,41.3999987632035"
-              Start="0,0"
-              End="141.933330695828,33.8999987632035">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,20.5131571624231" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,20.5131571624231"
-                    Point2="0,24.5131571624231"
-                    Point3="4,24.5131571624231" />
-                  <mssgle:LineSegment
-                    End="137.933330695828,24.5131571624231" />
-                  <mssgle:CubicBezierSegment
-                    Point1="137.933330695828,24.5131571624231"
-                    Point2="141.933330695828,24.5131571624231"
-                    Point3="141.933330695828,28.5131571624231" />
-                  <mssgle:LineSegment
-                    End="141.933330695828,33.8999987632035" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\DIM_to_Products_Fact\DIM_to_Products_Fact_Task.Paths[Derived Column Output]"
-          TopLeft="344.799996066093,494.066660293936">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="139.29999737988,59.2666647940872"
-              Start="0,0"
-              End="139.29999737988,51.7666647940872">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,31.1236798718332" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,31.1236798718332"
-                    Point2="0,35.1236798718332"
-                    Point3="4,35.1236798718332" />
-                  <mssgle:LineSegment
-                    End="135.29999737988,35.1236798718332" />
-                  <mssgle:CubicBezierSegment
-                    Point1="135.29999737988,35.1236798718332"
-                    Point2="139.29999737988,35.1236798718332"
-                    Point3="139.29999737988,39.1236798718332" />
-                  <mssgle:LineSegment
-                    End="139.29999737988,51.7666647940872" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          Size="161.6,41.6"
+          Id="Package\DIM_to_Products_Fact\DIM_to_Products_Fact_Task\Derived Column 1"
+          TopLeft="263.999996066093,452.466660293936" />
+        <NodeLayout
+          Size="120,41.6"
+          Id="Package\DIM_to_Products_Fact\DIM_to_Products_Fact_Task\Union All"
+          TopLeft="435.833326838911,283.333329111338" />
         <EdgeLayout
           Id="Package\DIM_to_Products_Fact\DIM_to_Products_Fact_Task.Paths[Union All Output 11]"
           TopLeft="495.833326913417,324.933329111338">
@@ -16351,6 +16325,74 @@ where [refTable].[product_id] = ?</property>
             <mssgm:EdgeLabel
               BoundingBox="-48.19138671875,64.6453110843895,96.3827734375,11.609375"
               RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DIM_to_Products_Fact\DIM_to_Products_Fact_Task.Paths[Derived Column Output1]"
+          TopLeft="335.233329476416,241.933330348134">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="141.933330695828,41.3999987632035"
+              Start="0,0"
+              End="141.933330695828,33.8999987632035">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.5131571624231" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20.5131571624231"
+                    Point2="0,24.5131571624231"
+                    Point3="4,24.5131571624231" />
+                  <mssgle:LineSegment
+                    End="137.933330695828,24.5131571624231" />
+                  <mssgle:CubicBezierSegment
+                    Point1="137.933330695828,24.5131571624231"
+                    Point2="141.933330695828,24.5131571624231"
+                    Point3="141.933330695828,28.5131571624231" />
+                  <mssgle:LineSegment
+                    End="141.933330695828,33.8999987632035" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DIM_to_Products_Fact\DIM_to_Products_Fact_Task.Paths[Derived Column Output]"
+          TopLeft="344.799996066093,494.066660293936">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="139.29999737988,59.2666647940872"
+              Start="0,0"
+              End="139.29999737988,51.7666647940872">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.1236798718332" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,31.1236798718332"
+                    Point2="0,35.1236798718332"
+                    Point3="4,35.1236798718332" />
+                  <mssgle:LineSegment
+                    End="135.29999737988,35.1236798718332" />
+                  <mssgle:CubicBezierSegment
+                    Point1="135.29999737988,35.1236798718332"
+                    Point2="139.29999737988,35.1236798718332"
+                    Point3="139.29999737988,39.1236798718332" />
+                  <mssgle:LineSegment
+                    End="139.29999737988,51.7666647940872" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
