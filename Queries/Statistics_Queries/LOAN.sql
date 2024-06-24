@@ -16,6 +16,5 @@ ORDER BY Total_Loans_Ammount DESC;
 -- Total loans per branch 
 SELECT  [branch_id] as Branc_ID , COUNT(*) AS Total_Loans
 FROM [DW_Bank].[dbo].[FACT_LOAN]
-where branch_id = 126
 GROUP BY [branch_id]
 ORDER BY total_loans DESC;

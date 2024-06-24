@@ -8,8 +8,8 @@
         <UseWinAuth>false</UseWinAuth>
         <WinAuthUserName />
         <WinAuthDomain />
-        <ServerName>MAHMOUD</ServerName>
-        <PathOnServer>/SSISDB/Assignment_1/DWH_Project</PathOnServer>
+        <ServerName>.</ServerName>
+        <PathOnServer>/SSISDB/Bank_DB/DWH_Project</PathOnServer>
         <UserIDs />
         <UserPasswords />
         <OfflineMode>false</OfflineMode>

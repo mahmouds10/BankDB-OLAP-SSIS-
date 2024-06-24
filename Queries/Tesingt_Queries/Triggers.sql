@@ -12,7 +12,7 @@ END;
 GO
 -- Create Insert Account triggrt
 CREATE TRIGGER trg_Account_Insert
-ON Account
+ON BankDB.dbo.Account
 AFTER INSERT
 AS
 BEGIN
@@ -25,7 +25,7 @@ GO
 
 -- Create Update Loan Trigger
 CREATE TRIGGER trg_Loan_Update
-ON Loan
+ON BankDB.dbo.Loan
 AFTER UPDATE
 AS
 BEGIN
@@ -38,7 +38,7 @@ GO
 
 -- Create Insert Loan Trigger
 CREATE TRIGGER trg_Loan_Insert
-ON Loan
+ON BankDB.dbo.Loan
 AFTER INSERT
 AS
 BEGIN
@@ -52,7 +52,7 @@ GO
 
 -- Create Update Branch Trigger
 CREATE TRIGGER trg_Branch_Update
-ON Branch
+ON BankDB.dbo.Branch
 AFTER UPDATE
 AS
 BEGIN
@@ -65,7 +65,7 @@ GO
 
 -- Create Insert Branch Trigger
 CREATE TRIGGER trg_Branch_Insert
-ON Branch
+ON BankDB.dbo.Branch
 AFTER INSERT
 AS
 BEGIN
@@ -78,7 +78,7 @@ GO
 
 -- Create Update Payment Trigger 
 CREATE TRIGGER trg_Payment_Update
-ON Payment
+ON BankDB.dbo.Payment
 AFTER UPDATE
 AS
 BEGIN
@@ -91,7 +91,7 @@ GO
 
 -- Create Insert Payment 
 CREATE TRIGGER trg_Payment_Insert
-ON Payment
+ON BankDB.dbo.Payment
 AFTER INSERT
 AS
 BEGIN
@@ -102,9 +102,9 @@ BEGIN
 END;
 GO
 
--- Create Update Product Trigger
+-- Create Insert Product Trigger
 CREATE TRIGGER trg_Treasury_Products_Insert
-ON Treasury_Products
+ON BankDB.dbo.Treasury_Products
 AFTER INSERT
 AS
 BEGIN
@@ -115,15 +115,14 @@ BEGIN
 END;
 GO
 
--- Create Insert Product Trigger
+-- Create Update Product Trigger
 CREATE TRIGGER trg_Treasury_Products_Update
-ON Treasury_Products
+ON BankDB.dbo.Treasury_Products
 AFTER UPDATE
 AS
 BEGIN
     UPDATE Treasury_Products
     SET Last_Update = GETDATE()
-    FROM Treasury_Products
-    INNER JOIN inserted ON Treasury_Products.Product_ID = inserted.Product_ID
+    WHERE Product_ID IN (SELECT Product_ID FROM inserted);
 END;
 GO
